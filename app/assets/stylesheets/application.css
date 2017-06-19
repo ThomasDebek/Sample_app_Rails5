@@ -12,4 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ 
+<!-- Musimy zaladowac niezbedne zasoby  -->
+ *= require_tree .
+ *= require_self
  */
