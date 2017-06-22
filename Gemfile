@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.0.3'
+gem 'bcrypt', '3.1.11'   # dzieki temu haszowaniu, osoba ktora nawet kiedy posiada nasza bd - to nie jest w stanie zalogowac sie do serwisu
 gem 'bootstrap-sass', '3.3.7'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
@@ -14,6 +15,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+
+
 
 
 
