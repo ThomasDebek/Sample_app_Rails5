@@ -26,4 +26,4 @@ Things you may want to cover:
 
 
 
-Finised 5.4 User signup: A first step
+Finised 6.41 User password

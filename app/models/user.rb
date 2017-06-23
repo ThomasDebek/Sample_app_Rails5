@@ -1,6 +1,8 @@
 class User < ApplicationRecord
 
 
+  attr_accessor :password, :password_confirmation
+
 
   before_save { email.downcase! }
   validates :name, presence: true, length: { maximum: 50 }
@@ -8,4 +10,5 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 },
             format: { with: VALID_EMAIL_REGEX },
             uniqueness: { case_sensitive: false }
+  validates :password, presence: true, length: { minimum: 6 }
 end
