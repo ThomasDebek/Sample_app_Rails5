@@ -10,4 +10,9 @@ module SessionsHelper
   end
 
 
+  def current_user  # Metoda zwarca bieżacego uzytkownika
+    @current_user ||= User.find_by(id: session[:user_id])
+  end
+
+
 end

@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  include SessionsHelper  # W tej sekcji użytkownik zaloguje się przy użyciu tymczasowego pliku cookie sesji,
+  include SessionsHelper  # zaladujmy metody z naszego helpera
+                          # W tej sekcji użytkownik zaloguje się przy użyciu tymczasowego pliku cookie sesji,
                           # który wygasa automatycznie po zamknięciu przeglądarki
 
 
