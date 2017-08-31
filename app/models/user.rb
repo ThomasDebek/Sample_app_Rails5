@@ -1,7 +1,16 @@
 class User < ApplicationRecord
+  #has_secure_password :validations => false
+  #has_secure_password
 
 
+  has_secure_password
   attr_accessor :password, :password_confirmation
+
+  #has_secure_password validations: false
+
+
+
+  #attr_accessor :password, :password_confirmation
 
 
   before_save { email.downcase! }
